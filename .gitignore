@@ -1,0 +1,43 @@
+# ============================================================================
+# .gitignore — Continuum Trilogy research project
+# Based on research/templates/gitignore-research-project-template.txt
+# ============================================================================
+
+# --- Ephemeral / JIT scratch scripts (NEVER durable, may contain tokens) ---
+_*.py
+_*.js
+_*.sh
+__pycache__/
+*.pyc
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# --- Build artifacts (rebuild from source, don't version binaries) ---
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+build/
+*.pdf
+
+# --- Credentials (defense in depth) ---
+*.token
+*_token
+*_secret
+.env
+.env.*
+keys.json
+
+# --- Local-only working files ---
+*.tmp
+*.bak
+~$*
+
+# --- Zenodo version tracking ---
+.zenodo_versions.json
