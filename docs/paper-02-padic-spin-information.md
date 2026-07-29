@@ -13,7 +13,7 @@ abstract: |
   discrete quantum structure: spin, internal quantum numbers (color, weak isospin, hypercharge),
   and information-theoretic (hierarchical) properties. The 2-adic Bruhat-Tits tree boundary
   carries a natural the Z2 grading that matches the spin-statistics distinction. The Standard
-  Model gauge group SU(3) × SU(2) × U(1) decomposes by prime factors, with internal quantum
+  Model gauge group SU(3) x SU(2) x U(1) decomposes by prime factors, with internal quantum
   numbers emerging as labels of vertices in Bruhat-Tits buildings at the corresponding primes.
   Time is Archimedean (Paper I) — connected, dynamical, causal. Spin and information are
   p-adic — discrete, ultrametric, hierarchical. Ostrowski's theorem — that the real numbers and the rational numbers_p are

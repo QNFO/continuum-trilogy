@@ -20,15 +20,6 @@ abstract: |
   principle: there are no other completions of the rational numbers, so there are no other physically real
   dimensions of the continuum. The resulting framework — adelic ontological closure —
   makes specific, falsifiable predictions that no Archimedean-only theory can make.
-keywords:
-  - ontological closure
-  - continuum hypothesis
-  - p-adic physics
-  - adelic
-  - Ostrowski's theorem
-  - computable analysis
-  - foundations of physics
-  - unfalsifiability
 ---
 
 # 1. Introduction: The 2D Continuum Model Decomposed
@@ -70,7 +61,7 @@ The Archimedean completion of $\mathbb{Q}$ is the unique connected, ordered, com
 | Computable completeness | PASS | All measurement sequences with computable error bounds converge |
 | Connectedness | PASS | Causality, topology, intermediate value theorem |
 | Real closure | PASS | Algebraic closure of physically real numbers |
-| Uncountability | FAIL | Not required — |$\mathbb{R}$_c| = $\aleph$0 but this is meta-theoretic |
+| Uncountability | FAIL | Not required — |$\mathbb{R}$_c| = $\aleph_{0}$ but this is meta-theoretic |
 
 ## 2.2 What It Does
 
@@ -85,8 +76,8 @@ Depth is the continuum of **time and dynamics.** It is the substrate on which fi
 
 Depth does not require:
 
-- Uncountability (|$\mathbb{R}$_c| = $\aleph$0)
-- The Continuum Hypothesis (distinction between $\aleph$1 and $\aleph$2 is physically inert)
+- Uncountability (|$\mathbb{R}$_c| = $\aleph_{0}$)
+- The Continuum Hypothesis (distinction between $\aleph_{1}$ and $\aleph_{2}$ is physically inert)
 - Non-computable reals (they are pairwise physically indistinguishable — Paper I, Theorem 4.3)
 - Dedekind completeness (computable Cauchy completeness suffices for all measurement sequences)
 - Chaitin's $\Omega$ (its binary expansion can never be measured; it is a proof-theoretic artifact)
@@ -97,7 +88,7 @@ Depth does not require:
 
 ## 3.1 What It Is
 
-The complement $\mathbb{R}$ \ $\mathbb{R}$_c consists of all non-computable real numbers — reals for which there is no Turing machine that approximates them with a computable modulus of convergence. This set has cardinality 2^{$\aleph$0} (continuum).
+The complement $\mathbb{R}$ \ $\mathbb{R}$_c consists of all non-computable real numbers — reals for which there is no Turing machine that approximates them with a computable modulus of convergence. This set has cardinality 2^{$\aleph_{0}$} (continuum).
 
 ## 3.2 Why It Is Physically Vacuous
 
@@ -131,8 +122,8 @@ The p-adic completions are physically real, but their role is **not geometric** 
 
 | p | Physical Role | Realization |
 |:--|:--------------|:------------|
-| 2 | Spin, fermion/boson statistics | $\mathbb{Z}$2 grading on Bruhat-Tits tree boundary |
-| 3 | Color charge (QCD) | Vertex labels in SL3($\mathbb{Q}$3) Bruhat-Tits building |
+| 2 | Spin, fermion/boson statistics | $\mathbb{Z}_{2}$ grading on Bruhat-Tits tree boundary |
+| 3 | Color charge (QCD) | Vertex labels in SL3($\mathbb{Q}_{3}$) Bruhat-Tits building |
 | Other p | Additional discrete quantum numbers | Bruhat-Tits buildings at the corresponding primes |
 
 The key insight from Paper II, §5.1:
@@ -141,7 +132,7 @@ The key insight from Paper II, §5.1:
 
 ## 4.3 Why Valuation Is NOT Breadth
 
-A natural objection: each $\mathbb{Q}$_p has cardinality 2^{$\aleph$0} (continuum), just like $\mathbb{R}$. Doesn't the breadth problem apply to p-adic numbers too?
+A natural objection: each $\mathbb{Q}$_p has cardinality 2^{$\aleph_{0}$} (continuum), just like $\mathbb{R}$. Doesn't the breadth problem apply to p-adic numbers too?
 
 **No. The distinction is operational:**
 
@@ -149,7 +140,7 @@ A natural objection: each $\mathbb{Q}$_p has cardinality 2^{$\aleph$0} (continuu
 
 - Non-computable p-adic numbers ($\mathbb{Q}$_p \ $\mathbb{Q}$_p^c) face the same objection — they too are physically vacuous. The computable p-adic numbers $\mathbb{Q}$_p^c are sufficient for physical content.
 
-- **But the computable p-adic numbers make falsifiable physical predictions** — Gromov δ = 0 for ZBW transitions, $\mathbb{Z}$2 invariant distinguishing Dirac from Majorana, p-adic valuation gaps between optimal and random codes. These predictions are testable independent of any non-computable structure.
+- **But the computable p-adic numbers make falsifiable physical predictions** — Gromov $\delta$ = 0 for ZBW transitions, $\mathbb{Z}_{2}$ invariant distinguishing Dirac from Majorana, p-adic valuation gaps between optimal and random codes. These predictions are testable independent of any non-computable structure.
 
 Valuation is physically real (through $\mathbb{Q}$_p^c) because it generates measurement-distinguishable predictions. Breadth is vacuous regardless of which completion it appears in.
 
@@ -169,9 +160,9 @@ Clause (1) eliminates the dark continuum. Clause (2) eliminates entities that, w
 
 | Axis | Satisfies (1)? | Satisfies (2)? | Physical Status |
 |:-----|:---:|:---:|:----------------|
-| **Depth ($\mathbb{R}$_c)** | PASS — all x ∈ $\mathbb{R}$_c are computable by definition | PASS — different computable reals produce different measurement sequences | Physically real |
+| **Depth ($\mathbb{R}$_c)** | PASS — all x $\in$ $\mathbb{R}$_c are computable by definition | PASS — different computable reals produce different measurement sequences | Physically real |
 | **Breadth ($\mathbb{R}$ \ $\mathbb{R}$_c)** | FAIL — no finite procedure approximates them | FAIL — they are unfalsifiable (Theorem 4.3, Paper I) | Physically vacuous |
-| **Valuation ($\mathbb{Q}$_p^c)** | PASS — computable p-adic numbers are Turing-approximable | PASS — falsifiable predictions (Gromov δ, $\mathbb{Z}$2 invariant, valuation gaps) | Physically real |
+| **Valuation ($\mathbb{Q}$_p^c)** | PASS — computable p-adic numbers are Turing-approximable | PASS — falsifiable predictions (Gromov $\delta$, $\mathbb{Z}_{2}$ invariant, valuation gaps) | Physically real |
 | **Valuation breadth ($\mathbb{Q}$_p \ $\mathbb{Q}$_p^c)** | FAIL — same as breadth above | FAIL — same as breadth above | Physically vacuous |
 
 ## 5.3 The Complete Physical Continuum
@@ -182,9 +173,9 @@ $$\mathcal{C}_{\text{phys}} = \mathbb{R}_c \times \prod_{p \in S} \mathbb{Q}_p^c
 
 where S is the (finite) set of primes whose p-adic completions encode physically relevant quantum structure.
 
-At minimum, S ⊇ {2, 3} (spin and color). Additional primes may encode additional discrete quantum numbers — the empirical question is open.
+At minimum, S $\supseteq$ {2, 3} (spin and color). Additional primes may encode additional discrete quantum numbers — the empirical question is open.
 
-𝔸_$\mathbb{Q}$^c — the ring of computable adeles — is the candidate framework for a unified adelic physical theory: a product of the computable reals and all computable p-adic numbers, restricted to finitely many non-Archimedean places for any given physical system.
+$\mathbb{A}_{\mathbb{Q}}$^c — the ring of computable adeles — is the candidate framework for a unified adelic physical theory: a product of the computable reals and all computable p-adic numbers, restricted to finitely many non-Archimedean places for any given physical system.
 
 ---
 
@@ -194,15 +185,15 @@ At minimum, S ⊇ {2, 3} (spin and color). Additional primes may encode addition
 
 1. **No measurement can distinguish a non-computable real from its computable shadow.** Any experiment claiming to measure a non-computable quantity (e.g., a value that depends on the halting problem) is measuring an illusion — the quantity actually measured is computable.
 
-2. **The Continuum Hypothesis cannot affect any measurement outcome.** Any theory whose predictions change depending on whether |$\mathbb{R}$| = $\aleph$1 or |$\mathbb{R}$| > $\aleph$1 is not a physical theory — it is a mathematical artifact.
+2. **The Continuum Hypothesis cannot affect any measurement outcome.** Any theory whose predictions change depending on whether |$\mathbb{R}$| = $\aleph_{1}$ or |$\mathbb{R}$| > $\aleph_{1}$ is not a physical theory — it is a mathematical artifact.
 
 ## 6.2 Predictions from the P-adic Framework (Paper II)
 
-1. **Gromov δ = 0 for ZBW transitions.** The Zitterbewegung current correlator is a tree (not merely tree-like). Spin noise spectroscopy or EELS/RIXS can measure this.
+1. **Gromov $\delta$ = 0 for ZBW transitions.** The Zitterbewegung current correlator is a tree (not merely tree-like). Spin noise spectroscopy or EELS/RIXS can measure this.
 
-2. **$\mathbb{Z}$2 invariant distinguishes Dirac (invariant = +1) from Majorana (invariant = -1).** This is a momentum-dependent diagnostic at the field-theoretic level — testable in condensed matter systems hosting Majorana zero modes.
+2. **$\mathbb{Z}_{2}$ invariant distinguishes Dirac (invariant = +1) from Majorana (invariant = -1).** This is a momentum-dependent diagnostic at the field-theoretic level — testable in condensed matter systems hosting Majorana zero modes.
 
-3. **Optimal quantum error-correcting codes exhibit p-adic valuation gaps.** v_p^{max} is significantly higher for optimal codes than random ones (7× for known families). This is testable by constructing code families and measuring their valuations.
+3. **Optimal quantum error-correcting codes exhibit p-adic valuation gaps.** v_p^{max} is significantly higher for optimal codes than random ones (7$\times$ for known families). This is testable by constructing code families and measuring their valuations.
 
 ## 6.3 Predictions from the Unified Framework (this paper)
 
@@ -210,7 +201,7 @@ At minimum, S ⊇ {2, 3} (spin and color). Additional primes may encode addition
 
 2. **Physics is finite-dimensional over $\mathbb{Q}$ at finitely many places.** The number of physically relevant primes S is finite. This constrains the possible structure of beyond-Standard-Model theories: they may add new primes but not a continuous infinity of them.
 
-3. **The JPCUB (Joules-per-CUBit) metric applies.** Computational advantage is measured not in abstract gate counts but in joules per solution at commercially relevant scale. Systems exploiting p-adic intrinsic protection (adelic QEC) should beat surface-code-based quantum computers on JPCUB by avoiding the 10²–10³ error-correction overhead.
+3. **The JPCUB (Joules-per-CUBit) metric applies.** Computational advantage is measured not in abstract gate counts but in joules per solution at commercially relevant scale. Systems exploiting p-adic intrinsic protection (adelic QEC) should beat surface-code-based quantum computers on JPCUB by avoiding the 10$^{2}$–10$^{3}$ error-correction overhead.
 
 ---
 
@@ -229,9 +220,9 @@ This is not a limitation on mathematics. It is a limitation on what mathematics 
 
 The unified framework suggests:
 
-1. **Quantum field theory should be reformulated over the ring of computable adeles A_$\mathbb{Q}$^c, not over $\mathbb{R}$⁴.** The familiar QFT over $\mathbb{R}$^{3,1} is the Archimedean projection of a richer adelic theory.
+1. **Quantum field theory should be reformulated over the ring of computable adeles A_$\mathbb{Q}$^c, not over $\mathbb{R}$$^{4}$.** The familiar QFT over $\mathbb{R}$^{3,1} is the Archimedean projection of a richer adelic theory.
 
-2. **The Standard Model's gauge group is not arbitrary.** SU(3)_C × SU(2)_L × U(1)_Y decomposes by prime factors (3, 2, ∞) because the completions at those places are the physically relevant ones. New gauge symmetries, if any, should appear at additional primes.
+2. **The Standard Model's gauge group is not arbitrary.** SU(3)_C $\times$ SU(2)_L $\times$ U(1)_Y decomposes by prime factors (3, 2, $\infty$) because the completions at those places are the physically relevant ones. New gauge symmetries, if any, should appear at additional primes.
 
 3. **The measurement problem may have a number-theoretic resolution.** Wavefunction collapse from a superposition to a definite outcome corresponds to a transition from the Archimedean description (continuous amplitudes) to the p-adic description (discrete measurement outcomes). This is speculative but falsifiable: if measurement outcomes are p-adic valuations, the distribution of outcomes should follow p-adic statistics, not Archimedean ones.
 
@@ -258,7 +249,7 @@ The complete picture:
                                        
                                        
    Archimedean    2-adic         3-adic, 5-adic, ...
-   (∞-place)     $\mathbb{Q}$2              $\mathbb{Q}$3, $\mathbb{Q}_{5}$, ...
+   ($\infty$-place)     $\mathbb{Q}_{2}$              $\mathbb{Q}_{3}$, $\mathbb{Q}_{5}$, ...
                                        
    DEPTH           VALUATION       VALUATION
    (connected,     (spin,          (color,
@@ -279,7 +270,7 @@ The OC program's ultimate claim: **all physically real entities are generated fr
 
 # References
 
-1. Ostrowski, A. (1916). "Über einige Lösungen der Funktionalgleichung φ(x)·φ(y) = φ(xy)." *Acta Mathematica*, 41, 271–284.
+1. Ostrowski, A. (1916). "Über einige Lösungen der Funktionalgleichung $\phi$(x)$\cdot\phi$(y) = $\phi$(xy)." *Acta Mathematica*, 41, 271–284.
 2. QNFO Research Collective (2026). "The Computable Continuum: Depth Without Breadth." (Continuum Trilogy — Paper I.)
 3. QNFO Research Collective (2026). "P-adic Spin, Information, and Ultrametric Internal Quantum Numbers." (Continuum Trilogy — Paper II.)
 4. QNFO Research Collective (2026). "Number-Theoretic Ultrametric Foundations." DOI: 10.5281/zenodo.21193487.
