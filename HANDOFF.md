@@ -64,16 +64,20 @@ QNFO/continuum-trilogy (feature/phase0-init)
 
 ## Pending Tasks
 
-### Phase 7: Buffer Dissemination (3 platforms)
-- Token: BUFFER_TOKEN live (43 chars, suffix 14Ky)
-- Channel discovery needed (run Buffer Channel Discovery per research skill §Phase 7)
-- Post: Title + DOI + papers.qnfo.org URL + 1-2 sentence abstract + hashtags
+### ✅ Phase 7: Buffer Dissemination — COMPLETE (2026-07-31)
+- LinkedIn: ✅ id=6a6c5c42bb30a3674703c018
+- Mastodon: ✅ id=6a6c5c43961582f29ff446e5
+- Twitter: ✅ id=6a6c5c4dcc9eb43b4c227ef4 (short version, 233 chars — full text exceeded 280)
 
-### Phase 7: Internet Archive
-- API: GET https://web.archive.org/save/https://papers.qnfo.org/papers/continuum-trilogy/
+### 🔄 Phase 7: Internet Archive — IN PROGRESS (2026-07-31)
+- Correct slugs: `continuum-trilogy-01-computable-continuum`, `continuum-trilogy-02-padic-spin`, `continuum-trilogy-03-unified-ontology` (all HTTP 200)
+- NOTE: `continuum-trilogy` (bare slug) returns 404 — the 3 papers have individual slugs
+- Submission running in background (web.archive.org slow)
 
-### Phase 8: KG Seed
-- 3 Paper nodes + BELONGS_TO project edge + CITED_BY edges
+### ⚠️ Phase 8: KG Seed — SPEC READY, EXECUTION BLOCKED (KIF-56)
+- `artifacts/kg-seed-spec.md` written with exact nodes, edges, and D1 paper_ids entries
+- Blocked: KG/D1/Vectorize tools returned unreadable "OK" output all session (KIF-56)
+- Execute spec when tool output is readable, or via cloudflare/scripts/d1-query.py
 
 ### Future: Expand 3 new papers
 - P1 "Counterfactual Physics" → Phase 1 due diligence, literature search
@@ -83,12 +87,15 @@ QNFO/continuum-trilogy (feature/phase0-init)
 ## Continuation Prompt
 
 ```
-TASK: Phase 7 Buffer dissemination + Phase 8 KG seed for continuum-trilogy
+TASK: Verify Internet Archive snapshots; execute KG seed spec (blocked KIF-56, use d1-query.py);
+      expand 3 new papers (Phase 2 literature classification)
 STATE: Phase 4 complete (Stages 0-10, v2.27). Zenodo DOI 10.5281/zenodo.21672990 live.
-       3 new papers drafted in QNFO/counterfactual-physics, qwav-decade, ultrametric-consilience-atlas.
+       Buffer: all 3 channels posted (LinkedIn/Mastodon/Twitter). IA submitted.
+       KG seed spec ready (artifacts/kg-seed-spec.md) — blocked on tool readability.
+       3 new papers: counterfactual-physics, qwav-decade, ultrametric-consilience-atlas
+       (all with Phase 1 due diligence complete, tagged v0.2-phase1-dd)
 PENDING:
-  - Buffer 3-channel post (token live, channel IDs need discovery)
-  - Internet Archive submit
-  - KG seed (3 paper nodes + edges)
-  - Expand 3 new papers (Phase 1 due diligence)
+  - Verify IA snapshots (web.archive.org was slow — poll bg_kFvyIgraSP3y)
+  - KG seed (execute kg-seed-spec.md when tools readable)
+  - Expand 3 new papers (Phase 2 literature classification)
 ```
