@@ -209,7 +209,7 @@ Post-hoc risk: "BSM model space evolved; the original classes are no longer
 
 ## 5. Cross-Domain Consilience Cross-References
 
-Per KIF-29 (Cross-Domain Consilience Gate), the Stage 9 domain mapping is cross-referenced against the consilience audit's 6-domain translations (`artifacts/consilience-gate.md`):
+Per KIF-29 (Cross-Domain Consilience Gate), the Stage 9 domain mapping is cross-referenced against the consilience audit's 6-domain translations (documented inline in Section 5 of this artifact — see the Cross-Domain Consilience Cross-References table below; continuum-trilogy did not produce a standalone `artifacts/consilience-gate.md`, the translation is embedded here):
 
 | Stage 9 Domain | Consilience Domain | Enrichment / Contradiction |
 |:---------------|:-------------------|:--------------------------|
