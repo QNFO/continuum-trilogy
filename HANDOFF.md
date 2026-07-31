@@ -80,6 +80,13 @@ QNFO/continuum-trilogy (feature/phase0-init)
 - Blocked: KG/D1/Vectorize tools returned unreadable "OK" output all session (KIF-56)
 - Execute spec when tool output is readable, or via cloudflare/scripts/d1-query.py
 
+### ✅ Red Team Audit — COMPLETE (2026-07-31)
+- `artifacts/red-team-audit-2026-07-31.md` — 8 findings, all resolved
+- RT-8 CRITICAL: git reset --hard data loss recovered from tag v0.4-phase4-forecast (consilient-gap artifacts)
+- RT-1/2/4/5/6/7 SOFT: dangling ref, mis-datings, anachronism, stale blocker, gitignore — all fixed
+- RT-3 MEDIUM: adelic prior-session work committed (KIF-32)
+- Anti-pattern logged to durable memory: never git reset --hard to resolve conflicts
+
 ### Future: Expand 3 new papers
 - P1 "Counterfactual Physics" → Phase 1 due diligence, literature search
 - P2 "QWAV Decade" → Phase 1 due diligence, hardware vendor data
