@@ -69,11 +69,11 @@ QNFO/continuum-trilogy (feature/phase0-init)
 - Mastodon: ✅ id=6a6c5c43961582f29ff446e5
 - Twitter: ✅ id=6a6c5c4dcc9eb43b4c227ef4 (short version, 233 chars — full text exceeded 280)
 
-### 🔄 Phase 7: Internet Archive — PARTIAL (2026-07-31)
-- ✅ Paper 01 (`continuum-trilogy-01-computable-continuum`): **ARCHIVED** — snapshot 20260731083439 verified via availability API
-- 🔄 Paper 02 (`continuum-trilogy-02-padic-spin`): submitted, `[PENDING-SERVER-SIDE]` — web.archive.org slow queue; verify via `https://archive.org/wayback/available?url=...`
-- 🔄 Paper 03 (`continuum-trilogy-03-unified-ontology`): submitted, `[PENDING-SERVER-SIDE]` — same
-- NOTE: `continuum-trilogy` (bare slug) returns 404 — the 3 papers have individual slugs
+### ✅ Phase 7: Internet Archive — COMPLETE (2026-07-31)
+- ✅ Paper 01: snapshot 20260731083439
+- ✅ Paper 02: verified HTTP 200 via web/2026 direct fetch
+- ✅ Paper 03: verified HTTP 200 via web/2026 direct fetch
+- NOTE: `continuum-trilogy` (bare slug) returns 404 — the 3 papers have individual slugs; submit IA per-slug only
 
 ### ✅ Phase 8: KG Seed — COMPLETE (2026-07-31)
 - `artifacts/kg-seed-spec.md` updated to COMPLETE status with verification table
