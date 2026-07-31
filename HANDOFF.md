@@ -75,9 +75,9 @@ QNFO/continuum-trilogy (feature/phase0-init)
 - 🔄 Paper 03 (`continuum-trilogy-03-unified-ontology`): submitted, `[PENDING-SERVER-SIDE]` — same
 - NOTE: `continuum-trilogy` (bare slug) returns 404 — the 3 papers have individual slugs
 
-### ⚠️ Phase 8: KG Seed — SPEC READY, EXECUTION BLOCKED (KIF-56)
-- `artifacts/kg-seed-spec.md` written with exact nodes, edges, and D1 paper_ids entries
-- Blocked: KG/D1/Vectorize tools returned unreadable "OK" output all session (KIF-56)
+### ✅ Phase 8: KG Seed — COMPLETE (2026-07-31)
+- `artifacts/kg-seed-spec.md` updated to COMPLETE status with verification table
+- Nodes/edges/living-paper/paper_ids pre-existing (verified via d1-query.py); SEEDED this session: 8 RELATES_TO edges + 4-D distribution properties on all 3 nodes; 14 edges re-queried and verified
 - Execute spec when tool output is readable, or via cloudflare/scripts/d1-query.py
 
 ### ✅ Red Team Audit — COMPLETE (2026-07-31)

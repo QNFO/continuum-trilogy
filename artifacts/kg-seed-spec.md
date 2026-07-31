@@ -4,7 +4,19 @@
 
 ## Verification Status
 
-`[NOT-VERIFIED: KG/D1/Vectorize tools returned unreadable "OK" output throughout the 2026-07-31 session — KIF-56. No offload files were produced. The seed below was NOT executed and MUST NOT be reported as complete. Execute when query_graph / get_paper_context / D1 queries return readable JSON.]`
+`COMPLETE (2026-07-31, verified via cloudflare/scripts/d1-query.py direct D1 access — the KG MCP tool remained unreadable this session, KIF-56, so the D1 helper was used instead):
+
+| Component | Status | Evidence |
+|:----------|:-------|:---------|
+| D1 living-paper (3 papers) | COMPLETE (pre-existing) | SELECT: 3 rows, published, v1.1.1, DOI 10.5281/zenodo.21672990 |
+| D1 paper_ids registry | COMPLETE (pre-existing) | SELECT: 3 rows, vectorize_id + kg_id match spec exactly |
+| KG Paper nodes (3) | COMPLETE (pre-existing) | SELECT qnfo-graph.nodes: paper:continuum-trilogy-0X-... all present |
+| BELONGS_TO edges (3) | COMPLETE (pre-existing) | edge:ct-p1/p2/p3-belongs -> project:continuum-trilogy |
+| CITES edges (3) | COMPLETE (pre-existing) | edge:ct-p2-cites-p1, ct-p3-cites-p1, ct-p3-cites-p2 |
+| RELATES_TO edges (8) | SEEDED 2026-07-31 | edge:ct-p{1,2,3}-rel-{computable,valuation,adele} -> concept-computable-reals / concept-valuation-theory / concept-adele-ring |
+| 4-D distribution properties | SEEDED 2026-07-31 | distribution_status=published, zenodo_doi, papers_server_url, distribution_date=2026-07-31 on all 3 nodes |
+
+Note: the spec's original "Ontological Closure" and "quantum numbers" concept nodes do not exist in the KG; edges were mapped to the existing concepts computable-reals, valuation-theory, and adele-ring instead.`
 
 ## Paper Nodes to Seed (DOIs verified live via papers.qnfo.org/llms.txt 2026-07-31)
 
@@ -39,7 +51,7 @@ slug: continuum-trilogy-02-padic-spin            -> vec: paper:continuum-trilogy
 slug: continuum-trilogy-03-unified-ontology      -> vec: paper:continuum-trilogy-03-unified-ontology:0,     kg: paper:continuum-trilogy-03-unified-ontology
 ```
 
-## Execution Protocol (when tools are readable)
+## Execution Record (completed 2026-07-31 — protocol for reference)
 
 1. `query_graph({endpoint: "query", params: {query: "MATCH (p:Paper) WHERE p.slug CONTAINS 'continuum-trilogy' RETURN p"}})` — check existing nodes first (check-then-write, never blind upsert)
 2. Create missing Paper nodes with slug, title, doi, pages_url, zenodo_url, r2_path
